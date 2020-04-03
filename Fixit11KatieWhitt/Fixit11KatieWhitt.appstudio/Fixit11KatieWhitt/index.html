@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang=en>
+<head>
+<meta charset="utf-8">
+<title>Fixit11KatieWhitt</title>
+<meta name="generator" content="NSB/AppStudio 8.0.5.0$rgkw" />
+<meta name='date' content='2020-04-02 14:01:22.496962' />
+<meta name='Description' content='Fixit11KatieWhitt' />
+<meta name='version' content='1.0.0' />
+<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no viewport-fit=cover' />
+<meta name='theme-color' content='#000000' />
+<meta name='mobile-web-app-capable' content='yes' />
+<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+<meta name='apple-mobile-web-app-title' content='' />
+<meta name='copyright' content='copyright 2020 ABC Company' />
+<link rel='apple-touch-icon' href='nsb/images/512.png' />
+<link rel='shortcut icon' href='nsb/images/512.png' />
+<link href='manifest.json' rel='manifest' />
+<link href="toolbox/as/dist/asStyle.css" rel="stylesheet">
+<script src="nsb/library/jquery3.js"></script>
+<link href="nsb/library/jquery.modal.min.css" rel="stylesheet">
+<script src="nsb/library/jquery.modal.min.js"></script>
+<script src="nsb/library/appstudioFunctions.js"></script>
+<link href="toolbox/bs4/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="toolbox/bs4/dist/open-iconic/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+<script src="toolbox/bs4/dist/js/bootstrap.bundle.min.js"></script>
+<script src="toolbox/bs4/dist/bsFunctions.min.js"></script>
+
+<style type="text/css">
+
+#customerSelect {background:inherit;}
+#drpSelect {position:absolute; left:24px; top:24px;}
+#txtSelect {position:absolute; left:0px; top:248px;}
+#btnFormDelete {position:absolute; left:140px; top:402px; width:180px;}
+#customerDelete {background:inherit;}
+#drpDelete {position:absolute; left:24px; top:24px;}
+#txtDelete {position:absolute; left:0px; top:248px;}
+#btnFormAdd {position:absolute; left:140px; top:402px; width:180px;}
+#customerAdd {background:inherit;}
+#txtAdd {position:absolute; left:0px; top:100px;}
+#btnAdd {position:absolute; left:75px; top:24px;}
+#btnFormUpdate {position:absolute; left:140px; top:402px; width:180px;}
+#customerUpdate {background:inherit;}
+#drpUpdate {position:absolute; left:0px; top:24px;}
+#txtUpdate {position:absolute; left:0px; top:248px;}
+#btnFormSelect {position:absolute; left:140px; top:402px; width:180px;}
+#inptUpdate {position:absolute; left:130px; top:24px;}
+#btnUpdate {position:absolute; left:244px; top:117px;}
+</style>
+
+</head>
+<body style="margin:0px;-ms-touch-action:none;font-family:-apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue';">
+<noscript><h1>JavaScript must be enabled!</h1></noscript>
+<div data-role="page" id="NSBPage" data-theme="a" style="position:absolute; width:100%; height:100%; background-color:inherit; ">
+<a name='/customerSelect' data-role=none></a>
+<div id="customerSelect"  class="nsb-form " style="display:none;  position:absolute;  height: 100vh; top:0px; left:0px; width:100%; ">
+<script>
+customerSelect.innerHTML=["",  NSB.bs.dropdown.make('drpSelect', 'Customers', 'dropdown', ' ', '', 'font-family:inherit;', 'font-family:inherit;', ' btn-secondary', '', ' btn-md', 'caret', '', '', '', '', '', '<span id=drpSelect_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span>', '', 'false', 'Search...'),
+  "<div id=txtSelect data-role='none' class='' style='font-family:inherit;'>",
+  "<div style='height:100%' class='form-group row'><label id=txtSelect_header class='bs4-control-label col-sm-2 col-form-label' for=txtSelect_contents data-i18n='All customers:'>All customers:</label>",
+    "<div style='height:100%' class='col-sm-10'>",
+      "<div class='input-group' style='width:100%;height:100%;'>",
+        "<span id=txtSelect_badge class='badge badge-info' style=margin-bottom:4px;></span>",
+    "<textarea id='txtSelect_contents' class='form-control' name='' style='font-family:inherit;overflow-scrolling:touch; height:100%; ' autocapitalize=on autocorrect=on autocomplete=on spellcheck=true  data-i18n=''></textarea>",
+      "</div>",
+      "</div>",
+  "</div></div>",
+
+    "<button id='btnFormDelete' data-role='none' class='btn btn-secondary btn-md ' style='font-family:inherit;' data-i18n='Change to Delete Form'><span id='btnFormDelete_icon' class=''></span>Change to Delete Form<span id=btnFormDelete_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span></button>",
+  ].join('');
+</script>
+</div>
+<a name='/customerDelete' data-role=none></a>
+<div id="customerDelete"  class="nsb-form " style="display:none;  position:absolute;  height: 100vh; top:0px; left:0px; width:100%; ">
+<script>
+customerDelete.innerHTML=["",  NSB.bs.dropdown.make('drpDelete', 'Customers', 'dropdown', ' ', '', 'font-family:inherit;', 'font-family:inherit;', ' btn-secondary', '', ' btn-md', 'caret', '', '', '', '', '', '<span id=drpDelete_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span>', '', 'false', 'Search...'),
+  "<div id=txtDelete data-role='none' class='' style='font-family:inherit;'>",
+  "<div style='height:100%' class='form-group row'><label id=txtDelete_header class='bs4-control-label col-sm-2 col-form-label' for=txtDelete_contents data-i18n='All customers:'>All customers:</label>",
+    "<div style='height:100%' class='col-sm-10'>",
+      "<div class='input-group' style='width:100%;height:100%;'>",
+        "<span id=txtDelete_badge class='badge badge-info' style=margin-bottom:4px;></span>",
+    "<textarea id='txtDelete_contents' class='form-control' name='' style='font-family:inherit;overflow-scrolling:touch; height:100%; ' autocapitalize=on autocorrect=on autocomplete=on spellcheck=true  data-i18n=''></textarea>",
+      "</div>",
+      "</div>",
+  "</div></div>",
+
+    "<button id='btnFormAdd' data-role='none' class='btn btn-secondary btn-md ' style='font-family:inherit;' data-i18n='Change to Add Form'><span id='btnFormAdd_icon' class=''></span>Change to Add Form<span id=btnFormAdd_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span></button>",
+  ].join('');
+</script>
+</div>
+<a name='/customerAdd' data-role=none></a>
+<div id="customerAdd"  class="nsb-form " style="display:none;  position:absolute;  height: 100vh; top:0px; left:0px; width:100%; ">
+<script>
+customerAdd.innerHTML=["",  "<div id=txtAdd data-role='none' class='' style='font-family:inherit;'>",
+  "<div style='height:100%' class='form-group row'><label id=txtAdd_header class='bs4-control-label col-sm-2 col-form-label' for=txtAdd_contents data-i18n='All customers:'>All customers:</label>",
+    "<div style='height:100%' class='col-sm-10'>",
+      "<div class='input-group' style='width:100%;height:100%;'>",
+        "<span id=txtAdd_badge class='badge badge-info' style=margin-bottom:4px;></span>",
+    "<textarea id='txtAdd_contents' class='form-control' name='' style='font-family:inherit;overflow-scrolling:touch; height:100%; ' autocapitalize=on autocorrect=on autocomplete=on spellcheck=true  data-i18n=''></textarea>",
+      "</div>",
+      "</div>",
+  "</div></div>",
+
+    "<button id='btnAdd' data-role='none' class='btn btn-secondary btn-md ' style='font-family:inherit;' data-i18n='Click to add a customer'><span id='btnAdd_icon' class=''></span>Click to add a customer<span id=btnAdd_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span></button>",
+
+    "<button id='btnFormUpdate' data-role='none' class='btn btn-secondary btn-md ' style='font-family:inherit;' data-i18n='Change to Update Form'><span id='btnFormUpdate_icon' class=''></span>Change to Update Form<span id=btnFormUpdate_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span></button>",
+  ].join('');
+</script>
+</div>
+<a name='/customerUpdate' data-role=none></a>
+<div id="customerUpdate"  class="nsb-form " style="display:none;  position:absolute;  height: 100vh; top:0px; left:0px; width:100%; ">
+<script>
+customerUpdate.innerHTML=["",  NSB.bs.dropdown.make('drpUpdate', 'Customers', 'dropdown', ' ', '', 'font-family:inherit;', 'font-family:inherit;', ' btn-secondary', '', ' btn-md', 'caret', '', '', '', '', '', '<span id=drpUpdate_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span>', '', 'false', 'Search...'),
+  "<div id=txtUpdate data-role='none' class='' style='font-family:inherit;'>",
+  "<div style='height:100%' class='form-group row'><label id=txtUpdate_header class='bs4-control-label col-sm-2 col-form-label' for=txtUpdate_contents data-i18n='All customers:'>All customers:</label>",
+    "<div style='height:100%' class='col-sm-10'>",
+      "<div class='input-group' style='width:100%;height:100%;'>",
+        "<span id=txtUpdate_badge class='badge badge-info' style=margin-bottom:4px;></span>",
+    "<textarea id='txtUpdate_contents' class='form-control' name='' style='font-family:inherit;overflow-scrolling:touch; height:100%; ' autocapitalize=on autocorrect=on autocomplete=on spellcheck=true  data-i18n=''></textarea>",
+      "</div>",
+      "</div>",
+  "</div></div>",
+
+    "<button id='btnFormSelect' data-role='none' class='btn btn-secondary btn-md ' style='font-family:inherit;' data-i18n='Change to Delete Form'><span id='btnFormSelect_icon' class=''></span>Change to Delete Form<span id=btnFormSelect_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span></button>",
+  "<div id=inptUpdate class='' style='font-family:inherit;'>",
+  "<div style='height:100%' class='form-group row'><label id=inptUpdate_header class='bs4-control-label col-sm-2 col-form-label' for=inptUpdate_contents data-i18n='Change their name:'>Change their name:</label>",
+    "<div class='col-sm-10'>",
+      "<span id=inptUpdate_badge class='badge badge-info' style=margin-bottom:4px;></span>",
+      "<div class='input-group ' style='width:100%;'>",
+        "<input id='inptUpdate_contents' type='text' autocapitalize=on autocorrect=on autocomplete=on spellcheck=true  data-i18n=''  style='font-family:inherit;' class='form-control ' >",
+      "</div>",
+    "</div>",
+  "</div></div>",
+
+    "<button id='btnUpdate' data-role='none' class='btn btn-secondary btn-md ' style='font-family:inherit;' data-i18n='Submit'><span id='btnUpdate_icon' class=''></span>Submit<span id=btnUpdate_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span></button>",
+  ].join('');
+</script>
+</div>
+</div>
+<script>
+if(!navigator.cookieEnabled) NSB.MsgBox('Please turn cookies on.');
+(function(){var all=document.getElementsByTagName('*');for(var i=0;i<all.length;i++)if(all[i].id!=''&&typeof all[i].id!='undefined'&&typeof window[all[i].id]=='undefined')window[all[i].id]=all[i];})()
+var NSB = NSB || {};
+NSB.currentForm = customerSelect;
+NSB.stopOnError = true;
+NSB.enableBrowserArrows = false;
+NSB.enableAppScroll = false;
+NSB.id = 'Fixit11KatieWhitt';
+NSB.initLanguage();
+NSB.voltAppId = '';
+NSB.voltDashboardAccess = False;
+NSB.voltDomain = '';
+NSB.PWA = true;
+if ($.mobile != undefined) $.mobile.hashListeningEnabled = false;
+
+// ***** Code for form: customerSelect *****
+window.addEventListener('load', function() {
+  customerSelect.style.display = 'block';
+  NSB.addProperties(customerSelect);
+  NSB.bs.addProperties(drpSelect, 'Dropdown_bs4');
+  txtSelect.ontouchmove=function(e){e.stopPropagation()};
+  txtSelect_contents.style.height = 'calc(100% - ' + getComputedStyle(txtSelect_header).height + ')';
+  NSB.bs.addProperties(txtSelect, 'Textarea_bs4');
+  NSB.bs.addProperties(btnFormDelete, 'Button_bs4');
+  customerSelect.style.display = 'none';
+}, false);
+
+// ***** Code for form: customerDelete *****
+window.addEventListener('load', function() {
+  customerDelete.style.display = 'block';
+  NSB.addProperties(customerDelete);
+  NSB.bs.addProperties(drpDelete, 'Dropdown_bs4');
+  txtDelete.ontouchmove=function(e){e.stopPropagation()};
+  txtDelete_contents.style.height = 'calc(100% - ' + getComputedStyle(txtDelete_header).height + ')';
+  NSB.bs.addProperties(txtDelete, 'Textarea_bs4');
+  NSB.bs.addProperties(btnFormAdd, 'Button_bs4');
+  customerDelete.style.display = 'none';
+}, false);
+
+// ***** Code for form: customerAdd *****
+window.addEventListener('load', function() {
+  customerAdd.style.display = 'block';
+  NSB.addProperties(customerAdd);
+  txtAdd.ontouchmove=function(e){e.stopPropagation()};
+  txtAdd_contents.style.height = 'calc(100% - ' + getComputedStyle(txtAdd_header).height + ')';
+  NSB.bs.addProperties(txtAdd, 'Textarea_bs4');
+  NSB.bs.addProperties(btnAdd, 'Button_bs4');
+  NSB.bs.addProperties(btnFormUpdate, 'Button_bs4');
+  customerAdd.style.display = 'none';
+}, false);
+
+// ***** Code for form: customerUpdate *****
+window.addEventListener('load', function() {
+  customerUpdate.style.display = 'block';
+  NSB.addProperties(customerUpdate);
+  NSB.bs.addProperties(drpUpdate, 'Dropdown_bs4');
+  txtUpdate.ontouchmove=function(e){e.stopPropagation()};
+  txtUpdate_contents.style.height = 'calc(100% - ' + getComputedStyle(txtUpdate_header).height + ')';
+  NSB.bs.addProperties(txtUpdate, 'Textarea_bs4');
+  NSB.bs.addProperties(btnFormSelect, 'Button_bs4');
+  inptUpdate.addEventListener('touchmove', function(e) {e.stopPropagation();}, false);
+  NSB.bs.addProperties(inptUpdate, 'Input_bs4');
+  NSB.bs.addProperties(btnUpdate, 'Button_bs4');
+  customerUpdate.style.display = 'none';
+}, false);
+
+
+window.addEventListener('orientationchange', function(){window.scrollTo(0,0)});
+window.addEventListener('load', function() {
+  if (typeof($().i18n) === 'function') $('[data-i18n]').i18n();
+  browserWarningMessage('Please use Google Chrome, Apple Safari or another supported browser.');
+  customerSelect.style.display = 'block';
+  Main();
+  if (typeof(customerSelect.onshow)=='function') customerSelect.onshow();
+}, false);
+</script>
+<script src="code.js"></script>
+
+</body>
+</html>
